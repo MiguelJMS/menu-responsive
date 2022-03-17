@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./pruevaHeader.css">
+    <title>Document</title>
+</head>
+<body>
+    
+    <div className="header">
+        <div className="header-container">
+            <div className="header--start">
+                    <Link to="/">
+                        <img src={ logo } alt="" />
+                    </Link>
+            </div>
+            <div className="header--mid">
+
+                <ul className="menu-movil">
+                    <li> 
+                            <i class="fas fa-bars"></i>
+                        <ul className="submenu-movil">
+                            <li><a href="">Productos</a></li>
+                            <li><a href="">Catalogos</a></li>
+                            <li><a href="">Empresa</a></li>
+                            <li><a href="">Contato</a></li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <ul className="menu">
+                    <li>
+                        <Link to="/products">PRODUCTOS
+                        </Link>
+                        <ul className="submenu">
+                            <li><Link to="/products">Mesas</Link></li>
+                            <li><a href="">Muebles</a></li>
+                            <li><a href="">Sillas</a></li>
+                            <li><a href="">Estantes</a></li>
+                            <li><a href="">Mesa De Centro</a></li>
+                        </ul>
+                    </li>
+                    <li><Link to="/catalogue">CATALOGO</Link></li>
+                    <li><Link to="/business">EMPRESA</Link></li>
+                    <li><Link to="/contact">CONTACTO</Link></li>
+                </ul>
+
+                <div className="header--end">
+                    <ul>
+                        <li>PT</li>
+                        <li>ENG</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
